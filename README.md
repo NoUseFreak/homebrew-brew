@@ -3,7 +3,7 @@
 ## Setup
 
 ```
-brew tap NoUseFreak/go
+brew tap NoUseFreak/brew
 ```
 
 ## Install packages
