@@ -1,7 +1,7 @@
 
 class Gitteams < Formula
-  desc "Generic release helper"
-  homepage "https://github.com/NoUseFreak/release"
+  desc "GitTeams gives you insight into multiple repositories at once."
+  homepage "https://github.com/NoUseFreak/gitteams"
 
   version "0.1.10"
   url "https://github.com/NoUseFreak/gitteams/releases/download/0.1.10/darwin_amd64.zip"
