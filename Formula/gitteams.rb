@@ -13,6 +13,6 @@ class Gitteams < Formula
 
 
   test do
-    system "#{bin}/{{ .Name }} -h"
+    system "#{bin}/gitteams -h"
   end
 end
