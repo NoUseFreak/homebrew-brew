@@ -8,8 +8,11 @@ class Gitteams < Formula
   sha256 "fbbc723da0f55cad8651e626d0fb7c2032f947b25a6e20f350441bf6ce619da8"
 
   def install
-    system "#{bin}/{{ .Name }} -h"
+    bin.install "gitteams"
   end
 
 
+  test do
+    system "#{bin}/{{ .Name }} -h"
+  end
 end
