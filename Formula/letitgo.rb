@@ -5,7 +5,7 @@ class Letitgo < Formula
 
   version "0.3.0"
   url "https://github.com/NoUseFreak/letitgo/releases/download/0.3.0/darwin_amd64.zip"
-  sha256 "0d1a82b54e6773d566b264906d09f094fd65608069ae31451710736ff5accd05"
+  sha256 "b4622c5f3e7ac14d61ac9db0904a3d5943284649336e40c00f43921c31c5d599"
 
   def install
     bin.install "letitgo"
