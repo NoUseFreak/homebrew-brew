@@ -5,7 +5,7 @@ class Sdf < Formula
 
   version "0.1.0"
   url "https://github.com/NoUseFreak/sdf/releases/download/0.1.0/darwin_amd64.zip"
-  sha256 "6d9684918e1c91cb4bd2cf8dad45ebe30c5be5a5e933a9a1668da48eed426e88"
+  sha256 "2d9783877d34f0b4a5b68c7ce654ae32315176e772b56a94877b584b4b4e2b24"
 
   def install
     bin.install "sdf"
