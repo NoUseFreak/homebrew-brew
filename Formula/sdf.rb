@@ -3,9 +3,9 @@ class Sdf < Formula
   desc "sdf for the lazy developer"
   homepage "https://github.com/NoUseFreak/sdf"
 
-  version "0.1.1"
-  url "https://github.com/NoUseFreak/sdf/releases/download/0.1.1/darwin_amd64.zip"
-  sha256 "494b5bae81b1290f856c51f9c737908d36042a93fa3d23ccaaeaf94e6f820427"
+  version "0.1.2"
+  url "https://github.com/NoUseFreak/sdf/releases/download/0.1.2/darwin_amd64.zip"
+  sha256 "9e2c8a35e72bc8465d07938fe39b92212908ac80f0f4dc99f5ba1b66e05480b7"
 
   def install
     bin.install "sdf"
