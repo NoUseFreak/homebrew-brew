@@ -3,9 +3,9 @@ class Letitgo < Formula
   desc "LetItGo automates releases."
   homepage "https://github.com/NoUseFreak/letitgo"
 
-  version "0.9.1"
-  url "https://github.com/NoUseFreak/letitgo/releases/download/0.9.1/darwin_amd64.zip"
-  sha256 "5d98c841f29f6281254f3e2257101cb57634acc279a35462e7d264a05d344d5c"
+  version "0.10.0"
+  url "https://github.com/NoUseFreak/letitgo/releases/download/0.10.0/darwin_amd64.zip"
+  sha256 "38f6390f81f91f21d71a7a01e4b3bfefc06b9e13413439ea7aa64f944ca4661c"
 
   def install
     bin.install "letitgo"
