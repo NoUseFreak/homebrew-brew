@@ -3,9 +3,9 @@ class Sawsh < Formula
   desc "SSH wrapper for aws to make your life easier."
   homepage "https://github.com/NoUseFreak/sawsh"
 
-  version "1.0.0-1-gb174ee9"
-  url "https://github.com/NoUseFreak/sawsh/releases/download/1.0.0-1-gb174ee9/darwin_amd64.zip"
-  sha256 "e0a267b82e040bec58822e2b29e8384a526f07d860608247d04c6f0f646e6c4f"
+  version "1.0.0"
+  url "https://github.com/NoUseFreak/sawsh/releases/download/1.0.0/darwin_amd64.zip"
+  sha256 "be794324a61f6f70ff8a5fa16c325248beb90eee1d4b7352d7d08ee9856b51db"
 
   def install
     bin.install "sawsh"
