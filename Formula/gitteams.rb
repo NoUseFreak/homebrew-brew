@@ -3,9 +3,9 @@ class Gitteams < Formula
   desc "GitTeams gives you insight into multiple repositories at once."
   homepage "https://github.com/NoUseFreak/gitteams"
 
-  version "0.1.11"
-  url "https://github.com/NoUseFreak/gitteams/releases/download/0.1.11/darwin_amd64.zip"
-  sha256 "0bf78dccd5d98dbdc57d7c2be6e998b068bd3e6ee1c436e2cce55bc8d9f64462"
+  version "0.1.14"
+  url "https://github.com/NoUseFreak/gitteams/releases/download/0.1.14/darwin_amd64.zip"
+  sha256 "acf0f0167408bbb099cde44d844ff37931dfc51ca5f95df21c9b061f9075bd1b"
 
   def install
     bin.install "gitteams"
@@ -13,6 +13,6 @@ class Gitteams < Formula
 
 
   test do
-    system "#{bin}/ -h"
+    system "#{bin}/gitteams -h"
   end
 end
