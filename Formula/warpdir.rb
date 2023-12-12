@@ -11,7 +11,7 @@ class Warpdir < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Darwin_arm64.tar.gz"
-      sha256 "f37ec6997b42913ac904914cde68ff537c309fd8d6b03aa3d126cc1792426215"
+      sha256 "da587b1405f40a1962484c03bb42921ac45a6d8f78f25fc99c6bf8aac7216a5c"
 
       def install
         bin.install "warpdir"
@@ -19,7 +19,7 @@ class Warpdir < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Darwin_x86_64.tar.gz"
-      sha256 "3e06d5065283f2d021e85f9593324d09c326fa700491c266b3836d0ef090de2d"
+      sha256 "9554650d93f085ed3b0eb7aa357cb7a1e4281203a4efe8b6e7e84745cf304011"
 
       def install
         bin.install "warpdir"
@@ -30,7 +30,7 @@ class Warpdir < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Linux_arm64.tar.gz"
-      sha256 "43c57401a0ce315a268b7054b8b5af318ed9be06211d2addebfba31776e34508"
+      sha256 "ca2adaf9f28b881850cf4ee60e3d74a7b9f50a5ccd2ba4848a73e0ca49f11447"
 
       def install
         bin.install "warpdir"
@@ -38,7 +38,7 @@ class Warpdir < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Linux_x86_64.tar.gz"
-      sha256 "eb49a18dd9f19c14b418001295e974f5ae7445441d12b98241eea9f0d6dd4503"
+      sha256 "4f52f682f1c5029a0956f9d72e6a6ac55f986efdf6c2339b0bde8939b9963ddc"
 
       def install
         bin.install "warpdir"
