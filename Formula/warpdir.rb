@@ -9,17 +9,17 @@ class Warpdir < Formula
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Darwin_x86_64.tar.gz"
-      sha256 "ea031538917b2e2e5ce54ff89f7ad3885516a2425b05891703a5a7016cb9a2b9"
+    if Hardware::CPU.arm?
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Darwin_arm64.tar.gz"
+      sha256 "f37ec6997b42913ac904914cde68ff537c309fd8d6b03aa3d126cc1792426215"
 
       def install
         bin.install "warpdir"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Darwin_arm64.tar.gz"
-      sha256 "1dac23cd8784fd04e52a3793815cc22331fc385bfb73978bf6bafafdbd055f9d"
+    if Hardware::CPU.intel?
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Darwin_x86_64.tar.gz"
+      sha256 "3e06d5065283f2d021e85f9593324d09c326fa700491c266b3836d0ef090de2d"
 
       def install
         bin.install "warpdir"
@@ -28,17 +28,17 @@ class Warpdir < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Linux_x86_64.tar.gz"
-      sha256 "dc8ae21a1d0a2bfa31ed113134247096c02b57d4c440808db2eef795bcc31515"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Linux_arm64.tar.gz"
+      sha256 "43c57401a0ce315a268b7054b8b5af318ed9be06211d2addebfba31776e34508"
 
       def install
         bin.install "warpdir"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Linux_arm64.tar.gz"
-      sha256 "4e55abf40cb912bc9f7c4be107261263d68bfd1ede2edb3009d8cc143eaedd9a"
+    if Hardware::CPU.intel?
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.1/warpdir_Linux_x86_64.tar.gz"
+      sha256 "eb49a18dd9f19c14b418001295e974f5ae7445441d12b98241eea9f0d6dd4503"
 
       def install
         bin.install "warpdir"
