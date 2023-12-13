@@ -5,43 +5,59 @@
 class Warpdir < Formula
   desc "Warpdir is a simple command line tool to create and manage shortcuts to directories"
   homepage "https://github.com/nousefreak/warpdir"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.2/warpdir_Darwin_arm64.tar.gz"
-      sha256 "3d8ac7c2b913518b8ab734a0c982af970ead92a18fc798054c6a544615a7f7b4"
+    if Hardware::CPU.intel?
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.3/warpdir_Darwin_x86_64.tar.gz"
+      sha256 "4487941baeaf267fde6010a541aca639c7c16b99848205dbecf3f91d0965e095"
 
       def install
         bin.install "warpdir"
+        bash_completion.install "completions/warpdir.bash" => "warpdir"
+        zsh_completion.install "completions/warpdir.zsh" => "_warpdir"
+        fish_completion.install "completions/warpdir.fish"
+        man1.install "manpages/warpdir.1.gz"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.2/warpdir_Darwin_x86_64.tar.gz"
-      sha256 "bf2c2d1d17a84030a3fb7a25ccf96f79a3519b2eec7391e556c499e0d18f0b58"
+    if Hardware::CPU.arm?
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.3/warpdir_Darwin_arm64.tar.gz"
+      sha256 "10fd55bba83a3d90ca3173108a353147d80ab0fd93c65289faae85c96055abec"
 
       def install
         bin.install "warpdir"
+        bash_completion.install "completions/warpdir.bash" => "warpdir"
+        zsh_completion.install "completions/warpdir.zsh" => "_warpdir"
+        fish_completion.install "completions/warpdir.fish"
+        man1.install "manpages/warpdir.1.gz"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.2/warpdir_Linux_arm64.tar.gz"
-      sha256 "7c86e72e60e9b113de8cee4ab3ce0d3c5ff0f596a391b03961af906c5b126d60"
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.3/warpdir_Linux_arm64.tar.gz"
+      sha256 "042cf0b69b05a4036abd4dbb34113c42f33cd772153fa032af410ef31e3915c1"
 
       def install
         bin.install "warpdir"
+        bash_completion.install "completions/warpdir.bash" => "warpdir"
+        zsh_completion.install "completions/warpdir.zsh" => "_warpdir"
+        fish_completion.install "completions/warpdir.fish"
+        man1.install "manpages/warpdir.1.gz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.2/warpdir_Linux_x86_64.tar.gz"
-      sha256 "db83eedc5197c6b2eac566bf2021fe0009c83c53de1dc5c027fdb1c462229168"
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v0.1.3/warpdir_Linux_x86_64.tar.gz"
+      sha256 "5e7afc706cd364b29903b86bca25128acf20dd6a3f62627198b43a089b19f610"
 
       def install
         bin.install "warpdir"
+        bash_completion.install "completions/warpdir.bash" => "warpdir"
+        zsh_completion.install "completions/warpdir.zsh" => "_warpdir"
+        fish_completion.install "completions/warpdir.fish"
+        man1.install "manpages/warpdir.1.gz"
       end
     end
   end
