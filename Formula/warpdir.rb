@@ -5,13 +5,13 @@
 class Warpdir < Formula
   desc "Warpdir is a simple command line tool to create and manage shortcuts to directories"
   homepage "https://github.com/nousefreak/warpdir"
-  version "1.0.6"
+  version "1.0.7"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v1.0.6/warpdir_Darwin_arm64.tar.gz"
-      sha256 "d6a83a5b80d6bce04140a20ad7d35d330e4136069a3358ea8ddb800c1a53efdf"
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v1.0.7/warpdir_Darwin_arm64.tar.gz"
+      sha256 "16c1debea7f9d023ac795bdf5e314e6b23c84cbd0133da68fa495c8d08e7099a"
 
       def install
         bin.install "warpdir"
@@ -22,8 +22,8 @@ class Warpdir < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v1.0.6/warpdir_Darwin_x86_64.tar.gz"
-      sha256 "81d261292d47b1921354e116c5cf5d867f58fb4e2c4db3885b66f0d9fcbf00b6"
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v1.0.7/warpdir_Darwin_x86_64.tar.gz"
+      sha256 "30638356353cc7ae880686e1f53c481c3c368fb7d761d4301dea38b0f465ec35"
 
       def install
         bin.install "warpdir"
@@ -37,8 +37,8 @@ class Warpdir < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v1.0.6/warpdir_Linux_x86_64.tar.gz"
-      sha256 "fd1cab432d5f59b5e3d312813114d5d22d519636fbd7feb8364af03630a50f92"
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v1.0.7/warpdir_Linux_x86_64.tar.gz"
+      sha256 "239e48eb38da4f41613b1bdc4a01e315aceb05d9739e82f02411285a3b4240ad"
 
       def install
         bin.install "warpdir"
@@ -49,8 +49,8 @@ class Warpdir < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NoUseFreak/warpdir/releases/download/v1.0.6/warpdir_Linux_arm64.tar.gz"
-      sha256 "e92d89740d982e3f157b6b4f352de78cd730edc5ffccf633da37346432427401"
+      url "https://github.com/NoUseFreak/warpdir/releases/download/v1.0.7/warpdir_Linux_arm64.tar.gz"
+      sha256 "06690fdce1bd2a64b7fc5dd96b570b957dd8650b2382a8c648e178baaa9decd6"
 
       def install
         bin.install "warpdir"
