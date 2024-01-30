@@ -5,13 +5,13 @@
 class Projecthelper < Formula
   desc "Project helper tries to save time"
   homepage "https://github.com/nousefreak/projecthelper"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/NoUseFreak/projecthelper/releases/download/v0.2.1/projecthelper_Darwin_arm64.tar.gz"
-      sha256 "c14c9202d72018ecc4386e9f9b2101e177a79507557d7bc6838af77174eed373"
+      url "https://github.com/NoUseFreak/projecthelper/releases/download/v0.2.2/projecthelper_Darwin_arm64.tar.gz"
+      sha256 "dbfdb0cb691769afd7271e422bec74b6428830704a036d3da04c7908ec0acf25"
 
       def install
         bin.install "projecthelper"
@@ -19,8 +19,8 @@ class Projecthelper < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/NoUseFreak/projecthelper/releases/download/v0.2.1/projecthelper_Darwin_x86_64.tar.gz"
-      sha256 "90af64f2c2f285bee04d4bdbfcca23d4c29df2445176043432cee4aa0a899f71"
+      url "https://github.com/NoUseFreak/projecthelper/releases/download/v0.2.2/projecthelper_Darwin_x86_64.tar.gz"
+      sha256 "9b513dbb607575276e6a28b5e859c9c9cf426d113f6d480c15bf6c3df07f6d47"
 
       def install
         bin.install "projecthelper"
@@ -31,8 +31,8 @@ class Projecthelper < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/NoUseFreak/projecthelper/releases/download/v0.2.1/projecthelper_Linux_arm64.tar.gz"
-      sha256 "a11a1fab46df476fcf95256145dfdce919b17bb54343e3e7f453602dca1e8e88"
+      url "https://github.com/NoUseFreak/projecthelper/releases/download/v0.2.2/projecthelper_Linux_arm64.tar.gz"
+      sha256 "942c5970bb8520cdc847b173be4fe97c0bff27b23ee7f9545544a52f5c7d64f5"
 
       def install
         bin.install "projecthelper"
@@ -40,8 +40,8 @@ class Projecthelper < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/NoUseFreak/projecthelper/releases/download/v0.2.1/projecthelper_Linux_x86_64.tar.gz"
-      sha256 "70e5f7e8e6fd72b66fdec73671cafecabaeb0f6f7a9ac3a326ccb211a459e005"
+      url "https://github.com/NoUseFreak/projecthelper/releases/download/v0.2.2/projecthelper_Linux_x86_64.tar.gz"
+      sha256 "3e23c5a7d3725f6206a191f4f2767f949335706775be8fe546731b21490ad8bf"
 
       def install
         bin.install "projecthelper"
